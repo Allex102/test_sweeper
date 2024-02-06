@@ -1,0 +1,6 @@
+API_TOKEN = 'test_telegram_bot_token'
+DB_USER = 'test_db_user'
+DB_PASSWORD = 'test_db_password'
+DB_HOST = 'test_db_host'
+DB_NAME = 'test_db_name'
+YOUR_MANAGER_CHAT_ID = 'test_manager_chat_id'
