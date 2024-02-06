@@ -1,6 +1,5 @@
-CREATE TABLE invoices (
-    id SERIAL PRIMARY KEY,
-    user_id INT,
+CREATE TABLE IF NOT EXISTS invoices (
+    user_id INTEGER,
     description TEXT,
     weight TEXT,
     dimensions TEXT,
@@ -9,18 +8,11 @@ CREATE TABLE invoices (
     payment_method TEXT
 );
 
-CREATE TABLE claims (
-    id SERIAL PRIMARY KEY,
-    user_id INT,
+CREATE TABLE IF NOT EXISTS claims (
+    user_id INTEGER,
     invoice_number TEXT,
     email TEXT,
     situation_description TEXT,
     requested_amount TEXT,
     photos TEXT
-);
-
-CREATE TABLE client_chats (
-    id SERIAL PRIMARY KEY,
-    user_id INT,
-    chat_id INT
 );
